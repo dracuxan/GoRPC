@@ -1,6 +1,6 @@
 module github.com/dracuxan/GoRPC
 
-go 1.23.3
+go 1.24.1
 
 require (
 	google.golang.org/grpc v1.70.0

@@ -3,11 +3,11 @@ package main
 import (
 	"context"
 
-	"github.com/dracuxan/GoRPC/proto"
+	pb "github.com/dracuxan/GoRPC/proto"
 )
 
-func (s *helloServer) SayHello(ctx context.Context, req *proto.NoParam) (*proto.HelloResponse, error) {
-	return &proto.HelloResponse{
+func (s *helloServer) SayHello(ctx context.Context, req *pb.NoParam) (*pb.HelloResponse, error) {
+	return &pb.HelloResponse{
 		Message: "Hello Weeb!",
 	}, nil
 }

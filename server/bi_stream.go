@@ -22,7 +22,7 @@ func (s *helloServer) SayHelloBiDirectionalStream(stream pb.GreetService_SayHell
 		log.Printf("Got Request with name: %v", req.Name)
 
 		res := &pb.HelloResponse{
-			Message: "Hello" + req.Name,
+			Message: "Hello " + req.Name,
 		}
 
 		if err := stream.Send(res); err != nil {
